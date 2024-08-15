@@ -1,4 +1,4 @@
-import 'package:currency_converter/pages/home.dart';
+import 'package:currency_converter/pages/convert.dart';
 import 'package:flutter/material.dart';
 
 class Welcomescreen extends StatelessWidget {
@@ -9,7 +9,7 @@ class Welcomescreen extends StatelessWidget {
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Home()),
+        MaterialPageRoute(builder: (context) => const Convert()),
       );
     });
     return Scaffold(
