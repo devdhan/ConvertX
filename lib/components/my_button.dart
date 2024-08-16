@@ -40,10 +40,10 @@ class MyButton extends StatelessWidget {
                     Text(
                       buttonText,
                       style: TextStyle(
-                        fontFamily: 'Montserrat',
+                        //fontFamily: 'Montserrat',
                         color: buttonTextColor,
                         fontSize: 16,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
@@ -51,10 +51,10 @@ class MyButton extends StatelessWidget {
               : Text(
                   buttonText,
                   style: TextStyle(
-                    fontFamily: 'Montserrat',
+                    //fontFamily: 'Montserrat',
                     color: buttonTextColor,
                     fontSize: fontSize,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
         ),

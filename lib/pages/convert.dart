@@ -10,7 +10,7 @@ class Convert extends StatelessWidget {
       appBar: AppBar(
           shape: const RoundedRectangleBorder(
               borderRadius:
-                  BorderRadius.only(bottomRight: Radius.circular(250))),
+                  BorderRadius.only(bottomRight: Radius.circular(100))),
           toolbarHeight: kToolbarHeight + 40,
           title: const Align(
             alignment: Alignment.center,
@@ -41,12 +41,15 @@ class Convert extends StatelessWidget {
                       focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Color(0xFF3F82B0)),
                           borderRadius: BorderRadius.all(Radius.circular(8))),
-                      hintText: ('AMOUNT'),
+                      hintText: ('ENTER AMOUNT'),
                       hintStyle: TextStyle(
                           color: Colors.black,
                           fontSize: 15,
                           fontWeight: FontWeight.w800)),
-                  style: TextStyle(color: Colors.black, fontSize: 16),
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500),
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.number,
                   maxLines: 1,
@@ -128,6 +131,17 @@ class Convert extends StatelessWidget {
                   maxLines: 1,
                 ),
               ),
+              const SizedBox(
+                height: 25,
+              ),
+              const Text(
+                '1650.32',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+              ),
+              const Text(
+                'Converted Amount',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+              ),
               //BUTTON TO CONVERT CURRENCY
               const SizedBox(
                 height: 40,
@@ -138,7 +152,7 @@ class Convert extends StatelessWidget {
                 fontSize: 18,
                 buttoncolor: const Color(0xFF3F82B0),
                 buttonTextColor: const Color(0xFFE3E8EE),
-              )
+              ),
             ],
           ),
         ),
