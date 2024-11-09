@@ -40,11 +40,11 @@ class Home extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: const Text('Nigeria Naira'),
+              title: const Text('Home'),
               onTap: () {},
             ),
             ListTile(
-              title: const Text('Nigeria Naira'),
+              title: const Text('About us'),
               onTap: () {},
             ),
           ],
