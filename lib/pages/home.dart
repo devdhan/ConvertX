@@ -47,6 +47,14 @@ class Home extends StatelessWidget {
               title: const Text('About us'),
               onTap: () {},
             ),
+            ListTile(
+              title: const Text('Support'),
+              onTap: () {},
+            ),
+            ListTile(
+              title: const Text('Buy us cofee'),
+              onTap: () {},
+            ),
           ],
         ),
       ),
