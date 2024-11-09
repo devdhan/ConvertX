@@ -29,7 +29,15 @@ class Home extends StatelessWidget {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(color: Color(0xFF3F82B0)),
-              child: Text('ConvertX'),
+              child: Text(
+                'ConvertX',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFE3E8EE),
+                    fontFamily: 'Kurale_Regular'),
+              ),
             ),
             ListTile(
               title: const Text('Nigeria Naira'),

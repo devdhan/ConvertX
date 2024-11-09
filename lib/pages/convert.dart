@@ -1,8 +1,17 @@
 import 'package:currency_converter/components/my_button.dart';
+import 'package:currency_converter/pages/home.dart';
 import 'package:flutter/material.dart';
 
 class Convert extends StatelessWidget {
   const Convert({super.key});
+
+  void hometest(BuildContext context) {
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => const Home()),
+      (Route<dynamic> route) => false,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -147,7 +156,7 @@ class Convert extends StatelessWidget {
                 height: 40,
               ),
               MyButton(
-                onTap: () {},
+                onTap: () => hometest(context),
                 buttonText: 'ConvertX',
                 fontSize: 18,
                 buttoncolor: const Color(0xFF3F82B0),
